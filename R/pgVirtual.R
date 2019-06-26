@@ -539,7 +539,7 @@ setMethod(
                                  group = factor(names(groups), 
                                                 levels = groupNames))
             groups <- groups[order(groups$group),]
-            labPos <- groups$nGenes/2 + cumsum(c(0, groups$nGenes[-nrow(groups)]))
+            labPos <- sum(groups$nGenes) - (groups$nGenes/2 + cumsum(c(0, groups$nGenes[-nrow(groups)])))
             p1 <- ggplot() + theme_bw()
             p1 <- p1 + theme(axis.title = element_blank(), 
                              axis.text.y = element_blank(), 
