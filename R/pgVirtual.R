@@ -780,7 +780,7 @@ evolBoot <- function(pangenome, times=10) {
     mat <- pgMatrix(pangenome)
     res <- lapply(seq(size), function(n) {
         res1 <- lapply(seq(times), function(i) {
-            ind <- sample(size, size = n, replace = TRUE)
+            ind <- sample(size, size = n, replace = FALSE)
             subMat <- mat[, ind, drop = FALSE]
             data.frame(panGroups(subMat, defaults(pangenome)$coreThreshold), 
                        stringsAsFactors = FALSE)
