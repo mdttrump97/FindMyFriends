@@ -9,14 +9,9 @@
 [![codecov.io](http://codecov.io/github/thomasp85/FindMyFriends/coverage.svg?branch=master)](http://codecov.io/github/thomasp85/FindMyFriends?branch=master)
 
 FindMyFriends is an R package for doing pangenomic analyses on microbial 
-genomes. It is released as part of the [Bioconductor](http://bioconductor.org/) 
-project and can be installed with the `BiocManager::install()` function:
+genomes. 
 
-```r
-if (!requireNamespace("BiocManager", quietly=TRUE))
-    install.packages("BiocManager")
-BiocManager::install("FindMyFriends")
-```
+## How to install
 
 For the absolute latest version, install directly from GitHub:
 
@@ -25,7 +20,7 @@ if(!require(devtools)) {
   install.packages('devtools')
   library(devtools)
 }
-install_github('thomasp85/FindMyFriends')
+install_github('mdttrump97/FindMyFriends')
 ```
 
 ## But what is this really about?
